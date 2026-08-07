@@ -24,6 +24,6 @@ public class Findminmaxavg {
         }
         System.out.println("The maximum marks is :- "+max);
         System.out.println("The minimum marks is :- "+min);
-        System.out.println("The Average marks is :- "+sum/n);
+        System.out.println("The Average marks is :- "+(double)sum/n);
     }
 }
