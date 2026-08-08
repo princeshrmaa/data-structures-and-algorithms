@@ -25,5 +25,19 @@ public class Findminmaxavg {
         System.out.println("The maximum marks is :- "+max);
         System.out.println("The minimum marks is :- "+min);
         System.out.println("The Average marks is :- "+(double)sum/n);
+        System.out.println("Value to search");
+        int val=sc.nextInt();
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==val) {
+                count++;
+            }
+        }
+        if(count>0){
+            System.out.println("Found"+" "+count+" "+"times");
+        }
+        else{
+            System.out.println("Not found");
+        }
     }
 }
