@@ -10,7 +10,7 @@ public class rec1 {
     }
     static void fun(int n,int i){
         if(i>n)return;
-        System.out.print(i+" ");
+        System.out.print(n+" ");
         fun(n,i+1);
     }
 }
