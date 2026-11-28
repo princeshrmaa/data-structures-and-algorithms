@@ -14,7 +14,7 @@ public class Linear_Queue {
             return;
         }
         arr[rear]=data;
-        rear++;
+        rear=(rear+1)%capacity;
         System.out.println(data + " added successfully");
     }
     int dequeue(){
@@ -23,7 +23,7 @@ public class Linear_Queue {
             return -1;
         }
         int var=arr[front];
-        front++;
+        front=(front+1)%capacity;
         if(front==rear){
             front=0;
             rear=0;
